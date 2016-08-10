@@ -1,0 +1,25 @@
+<html><head>
+  <link rel='stylesheet' type='text/css' href='app.css'>
+</head><body>
+  <h1>Open Loadouts</h1>
+  <pre>data:&lt;MembershipId:string, Loadouts:array&lt;Loadout&gt;&gt;
+
+class StackableItem() {
+  hash:number
+  amount:number
+}
+class Loadout() {
+  guid:number;
+  name:string;
+  platform:string;
+  subclass:number;
+  equip:array&lt;string&gt;;
+  inventory:array&lt;string&gt;;
+  stackable:array&lt;StackableItem&gt;;
+}</pre>
+  <pre><span id="sync-button">loading</span>. <a href='https://github.com/kyleshay/open-loadouts/issues'>source</a>. <a href='https://github.com/kyleshay/open-loadouts/issues'>docs</a>. <a href='https://github.com/kyleshay/open-loadouts/issues'>want in</a>?</pre>
+
+  <pre id="output"></pre>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=app"></script>
+</body></html>
