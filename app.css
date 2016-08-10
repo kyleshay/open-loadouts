@@ -2,23 +2,32 @@ body {
   background-color: #ffff59;
   width: 430px;
   font-family: 'Helvetica Neue', Helvetica, arial;
-  margin: 60px;
+  margin: 100px;
 }
 h1 {
   margin: 0;
-  font-size: 5.6em;
+  font-size: 5.9em;
   line-height: .85em;
+  padding-left: 0px;
+}
+pre {
+  padding-left: 6px;
+}
+h1, pre {
+  border-left: 3px solid #ffff59;
+}
+h1:hover, pre:hover {
+  border-left: 3px solid #FF3B59;
 }
 span, a {
   text-decoration: none;
   color: #FF3B59;
   cursor: pointer;
 }
-h1, pre {
-  border-left: 3px solid #ffff59;
-  padding-left: 6px;
-  margin-bottom: 100px;
+#sync-button {
+  float: right;
 }
-h1:hover, pre:hover {
-  border-left: 3px solid #FF3B59;
+label {
+  text-align: left;
+  display: block;
 }
