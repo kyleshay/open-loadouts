@@ -1,5 +1,5 @@
 # Open Loadouts
-Share loadout data between Destiny applications. Read through [`app.js`](https://github.com/kyleshay/open-loadouts/blob/gh-pages/app.js) for one example implementation.
+Share loadout data between 3rd party Destiny applications. Read through [`app.js`](https://github.com/kyleshay/open-loadouts/blob/gh-pages/app.js) for one example implementation.
 
 ### Scope
 The only permission required from the Google API is:
