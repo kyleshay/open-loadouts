@@ -6,26 +6,25 @@ body {
 }
 h1 {
   margin: 0;
-  font-size: 5.9em;
+  font-size: 6em;
   line-height: .85em;
   padding-left: 0px;
 }
 pre {
+  position: relative;
   padding-left: 6px;
 }
-h1, pre {
-  border-left: 3px solid #ffff59;
+a:hover {
+  border-bottom: 3px solid #FF3B59;
 }
-h1:hover, pre:hover {
-  border-left: 3px solid #FF3B59;
-}
-span, a {
+a {
   text-decoration: none;
   color: #FF3B59;
   cursor: pointer;
 }
 #sync-button {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 label {
   text-align: left;
