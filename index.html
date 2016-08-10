@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' type='text/css' href='app.css'>
 </head><body>
   <h1>Open Loadouts</h1>
@@ -8,6 +10,7 @@ class StackableItem() {
   hash:number
   amount:number
 }
+
 class Loadout() {
   guid:number;
   name:string;
@@ -17,7 +20,9 @@ class Loadout() {
   inventory:array&lt;string&gt;;
   stackable:array&lt;StackableItem&gt;;
 }</pre>
-  <pre><span id="sync-button">loading</span>. <a href='https://github.com/kyleshay/open-loadouts/issues'>source</a>. <a href='https://github.com/kyleshay/open-loadouts/issues'>docs</a>. <a href='https://github.com/kyleshay/open-loadouts/issues'>want in</a>?</pre>
+  <pre><span id="sync-button">loading</span>
+<a href='https://github.com/kyleshay/open-loadouts/blob/gh-pages/app.js'>source</a>
+<a href='https://developers.google.com/drive/v3/web/quickstart/js'>docs</a></pre>
 
   <pre id="output"></pre>
   <script type="text/javascript" src="app.js"></script>
