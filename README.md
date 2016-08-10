@@ -1,9 +1,8 @@
 # Open Loadouts
-
-Share loadout data between Destiny applications.
+Share loadout data between Destiny applications. Read through [`app.js`](https://github.com/kyleshay/open-loadouts/blob/gh-pages/app.js) for one example implementation.
 
 ### Scope
-The only permission required is:
+The only permission required from the Google API is:
 `https://www.googleapis.com/auth/drive.appfolder`
 
 ### Shared file location
