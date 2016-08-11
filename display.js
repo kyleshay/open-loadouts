@@ -20,24 +20,25 @@ window.Display = (function () {
     var list = document.getElementById('output');
     list.innerHTML = '';
     for(var membershipId in data) {
-      var container = document.createElement('div'),
-          element = document.createElement('label');
-      element.innerText = 'ID ' + membershipId;
-      container.appendChild(element);
+      var table = document.createElement('table'),
+          el = document.createElement('div');
+      el.innerText = 'ID ' + membershipId;
+      list.appendChild(el);
 
       data[membershipId].forEach(function(loadout) {
-        var element = document.createElement('label');
-        element.innerText = loadout.name +
-          ' - equip:' + loadout.equip.length +
-          ' - inv:' + loadout.inventory.length +
-          ' - stack:' + loadout.stackable.length +
-          ' - ' + getType(loadout.subclass) +
-          ' - ' + loadout.platform;
-        container.appendChild(element);
+        el = document.createElement('tr');
+        el.title = loadout.name;
+        el.innerHTML = '<tr>' +
+          '<td class="name">' + loadout.name +
+          '</td><td>Equip:' + loadout.equip.length +
+          '</td><td>Inv:' + loadout.inventory.length +
+          '</td><td>Stack:' + loadout.stackable.length +
+          '</td><td>' + getType(loadout.subclass) +
+          '</td><td>' + loadout.platform +
+          '</td></tr>';
+        table.appendChild(el);
       });
-
-      container.className = 'item-container item-container-content';
-      list.appendChild(container);
+      list.appendChild(table);
     }
   }
 
