@@ -13,8 +13,8 @@ All data is stored in a file named `Open.Loadout` in the `appDataFolder` space i
 data:<MembershipId:string, Loadouts:array<Loadout>>
 
 class Item() {
+  hash:number // required for all items.
   id:string // required for non-stackable items. stackable items do not have an id.
-  hash:number // required for stackable items. optional if item type is non-stackable.
   amount:number // required for stackable items. all other items are optional or should be 1
 }
 
