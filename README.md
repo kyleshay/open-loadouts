@@ -14,9 +14,6 @@ data:<MembershipId:string, Loadouts:array<Loadout>>
 
 class Item() {
   id:string
-}
-
-class StackableItem() {
   hash:number
   amount:number
 }
@@ -28,6 +25,6 @@ class Loadout() {
   subclass:number;
   equip:array<Item>;
   inventory:array<Item>;
-  stackable:array<StackableItem>;
+  stackable:array<Item>;
 }
 ```

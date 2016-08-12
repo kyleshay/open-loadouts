@@ -1,6 +1,6 @@
 body {
   background-color: #ffff59;
-  width: 430px;
+  width: 427px;
   font-family: 'Helvetica Neue', Helvetica, arial;
   margin: 100px;
 }
@@ -51,3 +51,28 @@ table, tr, th, td {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.icon {
+  position: relative;
+  margin: 1.32px;
+  border: 1px solid black;
+  height: 48px;
+  width: 48px;
+  float: left;
+}
+.icon img {
+  height: 48px;
+  width: 48px;
+}
+.icon span {
+  font-size: .8em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: .7;
+  color: black;
+  padding: 0 2px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+h3 { float:left; width:100%; }
