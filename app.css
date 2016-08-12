@@ -2,7 +2,12 @@ body {
   background-color: #ffff59;
   width: 427px;
   font-family: 'Helvetica Neue', Helvetica, arial;
-  margin: 100px;
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  body {
+    margin: 100px;
+  }
 }
 h1 {
   margin: 0;
