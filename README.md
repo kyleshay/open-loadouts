@@ -19,7 +19,7 @@ class Item() {
 }
 
 class Loadout() {
-  guid:number;
+  guid:string;
   name:string;
   platform:string;
   subclass:number;
