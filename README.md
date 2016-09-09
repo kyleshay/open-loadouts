@@ -22,7 +22,7 @@ class Loadout() {
   guid:string;
   name:string;
   platform:string;
-  subclass:number;
+  class:number;
   equip:array<Item>;
   inventory:array<Item>;
   stackable:array<Item>;
